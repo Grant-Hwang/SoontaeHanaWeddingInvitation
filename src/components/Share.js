@@ -14,14 +14,14 @@ const Share = () => {
       alert('카카오톡 초기화에 실패했습니다. 새로고침 해주세요.');
       return;
     }
-    
+    const fullImageUrl = window.location.origin + '/pictures/front.jpg'
     if (window.Kakao) {
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
           title: '순태 & 하나 결혼합니다',
           //imageUrl: mainWeddingImage,
-          imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80',
+          imageUrl: fullImageUrl,
           link: {
             mobileWebUrl: window.location.href,
             webUrl: window.location.href,
