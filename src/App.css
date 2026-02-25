@@ -1,0 +1,56 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap);
+
+:root {
+  --primary-color: #2d2e2d; /* 여름 바다색 (Teal) */
+  --secondary-color: #e6e7e7; /* 시원한 민트 배경 */
+  --accent-color: #FFD700; /* 해바라기 옐로우 */
+  --text-color: #333;
+  --bg-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Nanum Myeongjo", serif;
+  background-color: #f0f2f5;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 480px; /* 모바일 최적화 너비 */
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  min-height: 100vh;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Nanum Myeongjo", serif;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* 구분선 */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  margin: 0;
+}
+
+/* 애니메이션 */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
