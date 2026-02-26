@@ -14,7 +14,7 @@ const Share = () => {
       alert('카카오톡 초기화에 실패했습니다. 새로고침 해주세요.');
       return;
     }
-    const fullImageUrl = window.location.origin + '/pictures/front.jpg'
+    const fullImageUrl = 'https://raw.githubusercontent.com/Grant-Hwang/SoontaeHanaWeddingInvitation/refs/heads/main/src/pictures/front.jpg'
     if (window.Kakao) {
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
@@ -23,16 +23,16 @@ const Share = () => {
           //imageUrl: mainWeddingImage,
           imageUrl: fullImageUrl,
           link: {
-            mobileWebUrl: window.location.href,
-            webUrl: window.location.href,
+            mobileWebUrl: 'https://soontae-hana-wedding-invitation.vercel.app/',
+            webUrl: 'https://soontae-hana-wedding-invitation.vercel.app/',
           },
         },
         buttons: [
           {
             title: '청첩장 보기',
             link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
+              mobileWebUrl: 'https://soontae-hana-wedding-invitation.vercel.app/',
+              webUrl: 'https://soontae-hana-wedding-invitation.vercel.app/',
             },
           },
         ],
