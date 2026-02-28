@@ -20,7 +20,7 @@ const CalendarView = () => {
   return (
     <section style={{ backgroundColor: 'var(--secondary-color)' }}>
       <h2>6월의 어느 멋진 날</h2>
-      <div style={{ fontSize: '1.2rem', marginBottom: '20px' }}>2026. 06. 20</div>
+      <div style={{ fontSize: '1.2rem', marginBottom: '20px' }}>2026. 06. 20. 토요일</div>
 
       <div style={{
         display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)',

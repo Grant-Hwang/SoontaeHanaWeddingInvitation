@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import img1 from '../pictures//1.jpg'
 import img2 from '../pictures//2.jpg'
 import img3 from '../pictures//3.jpg'
@@ -24,6 +24,21 @@ const Gallery = () => {
   const [touchEnd, setTouchEnd] = useState(null);
 
   const images = [img1, imgfront, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17];
+
+  useEffect(() => {
+    if (selectedIdx !== null) {
+      // 모달이 열려있을 때 스크롤 방지
+      document.body.style.overflow = 'hidden';
+    } else {
+      // 모달이 닫히면 스크롤 복원
+      document.body.style.overflow = 'auto';
+    }
+
+    // 컴포넌트가 언마운트될 때를 대비한 클린업 함수
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [selectedIdx]);
 
   const minSwipeDistance = 50;
 
@@ -90,7 +105,8 @@ const Gallery = () => {
           style={{
             position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
             backgroundColor: 'rgba(0, 0, 0, 0.9)', display: 'flex', alignItems: 'center',
-            justifyContent: 'center', zIndex: 1000
+            justifyContent: 'center', zIndex: 1000,
+            touchAction: 'none'
           }}
         >
           {/* 닫기 버튼 */}
