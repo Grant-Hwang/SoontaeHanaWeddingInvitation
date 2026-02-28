@@ -30,15 +30,28 @@ const CalendarView = () => {
           <div key={day} style={{ color: '#333', fontWeight: 'bold' }}>{day}</div>
         ))}
         {dates.map((date, idx) => (
-          <div key={idx} style={{
-            padding: '8px',
-            borderRadius: '50%',
-            backgroundColor: date === 20 ? 'var(--primary-color)' : 'transparent',
-            color: date === 20 ? 'white' : '#333',
-            fontWeight: date === 20 ? 'bold' : 'normal'
-          }}>
-            {date}
-          </div>
+<div key={idx} style={{
+    // 1. 가로 세로를 동일하게 고정 (모바일에 적당한 크기)
+    width: '35px', 
+    height: '35px',
+    
+    // 2. 글자를 수직/수평 중앙에 배치
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    
+    // 3. 그리드 칸 내에서 가로 중앙 정렬
+    margin: '0 auto', 
+    
+    borderRadius: '50%',
+    backgroundColor: date === 20 ? 'var(--primary-color)' : 'transparent',
+    color: date === 20 ? 'white' : '#333',
+    fontWeight: date === 20 ? 'bold' : 'normal',
+    fontSize: '0.9rem', // 모바일에 맞춰 살짝 줄임
+    cursor: date ? 'pointer' : 'default'
+  }}>
+    {date}
+  </div>
         ))}
       </div>
 
