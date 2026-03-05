@@ -90,7 +90,7 @@ const Gallery = () => {
             src={src}
             alt={`Wedding ${idx}`}
             onClick={() => setSelectedIdx(idx)} // 이미지 클릭 시 해당 인덱스 저장
-            style={{ width: '100%', height: '150px', objectFit: 'cover', cursor: 'pointer' }}
+            style={{ width: '100%', height: '140px', objectFit: 'cover', cursor: 'pointer' }}
           />
         ))}
       </div>
