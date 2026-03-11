@@ -44,7 +44,7 @@ const Location = () => {
           margin: '0 auto'
         }}
         >
-          <img src='https://i.namu.wiki/i/24xAehEydeybS-dYHEBxU6lHfmamFlTUjYthQ0O_BfHYIkBJ3DbzGUd8GXiUeANQq3yL_NorPbqeq2J161VUdqVqxT8s2pmLUq9A8HXaBbHsEThOQZdKaaVlDliRYYsSjhDJovj0oA99vRX_Bfj61Q.webp'width={30}/>
+          <img src='https://i.namu.wiki/i/Q_ndgWhHedxkTDO12440oV7UUV6zmMPV7s7RplZbnbcmPfbK1fnDUwcklrveNrpiGtypsYqPcsbprGp-yghCyvokJE9mdyqbHdPa1XSD_RLLAqdZP1-8mz0nwTxzbn7JSqPk1O0dyHbFUVjgHWXLAA.webp'width={30}/>
         </a>
         <a
           href={`https://place.map.kakao.com/583164148`}
