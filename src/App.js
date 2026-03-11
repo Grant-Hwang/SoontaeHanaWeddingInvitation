@@ -39,7 +39,7 @@ function App() {
       <Account />
       <Share />
       {/* <footer style={{ padding: '20px', textAlign: 'center', fontSize: '12px', color: '#888' }}>
-        Copyright © 2026 순태 & 하나. All rights reserved.
+        Copyright © 2026 황순태 & 하나. All rights reserved.
       </footer> */}
     </div>
   );

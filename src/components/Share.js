@@ -19,7 +19,7 @@ const Share = () => {
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-          title: '순태 & 하나 결혼합니다',
+          title: '황순태 & 하나 결혼합니다',
           //imageUrl: mainWeddingImage,
           imageUrl: fullImageUrl,
           link: {
