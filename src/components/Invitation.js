@@ -17,8 +17,8 @@ const Invitation = () => {
       </p>
 
       <div style={{ marginTop: '30px', border: '1px solid #ddd', padding: '20px', borderRadius: '8px' }}>
-        <p><strong>황대호 · 이해숙</strong> 의 아들 <strong>순태</strong></p>
-        <p><strong>하국현 · 박연희</strong> 의 딸 <strong>나</strong></p>
+        <p><strong>황대호 · 이해숙</strong> 의 아들 <strong>황순태</strong></p>
+        <p><strong>하국현 · 박연희</strong> 의 딸 <strong>하나</strong></p>
       </div>
     </section>
   );
