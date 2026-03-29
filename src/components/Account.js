@@ -56,8 +56,8 @@ const AccountItem = ({ title, accounts }) => {
 const Account = () => {
   // 데이터 관리
   const groomAccounts = [
-    { name: "혼주 황대호 (부)", account: "하나은행 278-911028-90807" },
-    { name: "혼주 이해숙 (모)", account: "국민은행 701-24-0302937" },
+    { name: "혼주 황대호 (부)", account: "국민은행 701-24-0302937" },
+    { name: "혼주 이해숙 (모)", account: "하나은행 278-911028-90807" },
     { name: "신랑 황순태", account: "신한은행 110-438-160871" },
   ];
 
