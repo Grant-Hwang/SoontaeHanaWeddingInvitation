@@ -62,6 +62,7 @@ const Location = () => {
           <img src='https://developers.kakao.com/tool/resource/static/img/logo/map/kakaomap_basic.png'width={30}/>
 
         </a>
+        <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>주차 3시간 무료입니다.</p>
       </div>
     </section>
   );
